@@ -1,0 +1,24 @@
+html,body{
+    background-color: rgb(17, 87, 87);
+    margin: 0;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 0;
+}
+div{
+    padding: 20px;
+    height: 300px;
+    width: 100%;
+    background-color: paleturquoise;
+}
+h1{
+    color: teal;
+}
+p{
+    font-size: 18px;
+}
+span{
+    font-size: 28px;
+    font-weight: bold;
+}
