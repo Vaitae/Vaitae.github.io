@@ -1,18 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Site!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
 </head>
-<body>
-    <center>
-        <div>
-        <h1>Welcome to my page!</h1>
-        <p>I'm <span>Vaishnavi</span></p>
-        <article>It is my github pages website</article>
-        </div>
-    </center>    
+
+<body onload="myFunction()" style="margin:0;">
+    <!--Loader-->
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <center>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <a href="#Home">
+                            <li>Home</li>
+                        </a>
+                        <a href="#Projects">
+                            <li>Projects</li>
+                        </a>
+                        <a href="#Skills">
+                            <li>Skills</li>
+                        </a>
+                        <a href="#About">
+                            <li>About</li>
+                        </a>
+                        <a href="#Contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+            <!--Hero Section-->
+            <div class="hero" id="Home">
+                <h1>Welcome to my page!</h1>
+                <p>I'm <span>Vaishnavi</span></p>
+                <article>It is my github pages website</article>
+            </div>
+            <!--Projects Section-->
+            <div id="Projects">
+                <h1>Projects</h1>
+                <div class="grid">
+                    <div class="grid-item">
+                        <img class="img-top" href="">
+                        <h2>Project 1</h2>
+                        <p>pr 1</p>
+                    </div>
+                    <div class="grid-item">
+                        <img class="img-top" href="">
+                        <h2>Project 2</h2>
+                        <p>pr 2</p>
+                    </div>
+                    <div class="grid-item">
+                        <img class="img-top" href="">
+                        <h2>Project 3</h2>
+                        <p>pr 3</p>
+                    </div>
+                </div>
+            </div>
+            <!--Skills Section-->
+            <div id="Skills">
+
+            </div>
+            <!--About Section-->
+            <div id="About">
+
+            </div>
+            <!--Contact Section-->
+            <div id="Contact">
+
+            </div>
+    </div>
+    </center>
+
+    <!--loader-->
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
 </body>
+
 </html>
