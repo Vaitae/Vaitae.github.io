@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Site!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
 </head>
-<body>
-    <center>
-        <div>
-        <h1>Welcome to my page!</h1>
-        <p>I'm <span>Vaishnavi</span></p>
-        <article>It is my github pages website</article>
-        </div>
-    </center>    
+
+<body onload="myFunction()" style="margin:0;">
+    <!--Loader-->
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+            <!--Hero Section-->
+            <div class="hero" id="Home">
+                <h1>Welcome to my page!</h1>
+                <p>I'm <span>Vaishnavi</span></p>
+                <article>It is my github pages website</article>
+            </div>
+    </center>
+
+    <!--loader-->
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
 </body>
+
 </html>
