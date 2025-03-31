@@ -1,39 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site!</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon.ico">
-</head>
-
-<body onload="myFunction()" style="margin:0;">
+  <head>
+    <link rel="icon" href="assets/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="myFunction()" style="margin:0;">
     <!--Loader-->
     <div id="loader"></div>
     <div style="display:none;" id="myDiv" class="animate-bottom">
-            <!--Hero Section-->
-            <div class="hero" id="Home">
-                <h1>Welcome to my page!</h1>
-                <p>I'm <span>Vaishnavi</span></p>
-                <article>It is my github pages website</article>
-            </div>
+    <header>
+      <nav>
+        <a href="#" id="first-link">// V</a>
+        <ul>
+          <a href="#"><li>Home</li></a>
+          <a href="#About"><li>About</li></a>
+          <a href=""><li>Projects</li></a>
+          <a href=""><li>Contact</li></a>
+        </ul>
+      </nav>
+    </header>
+    <center>
+      <section class="hero">
+        <div class="hero-content">
+          <h5 id="hero-h5">// HI, I'm Vaishnavi</h5>
+          <br />
+          <h1 id="hero-h1">{" <span id="yellow">Developer</span> "}</h1>
+          <div class="hero-arrow"><a href=#About>⇣</a></div>
+        </div>
+      </section>
     </center>
+
+    
+      <section id="About" class="about-section">
+        <div class="About-content">
+          <div class="about-box-1">
+            <center>
+            <h2><span id="purple">{/}</span></h2>
+            <h1>&lt;About me&gt;</h1>
+            <p id="p-yellow">
+              A web developer with a passion for data science and Python
+              programming.
+            </p>
+          </center>
+          </div>
+          <div class="about-box-2">
+            <div class="box-1">
+              <p>
+                I specialize in building dynamic websites and applications while
+                harnessing the power of data to drive insights and solutions.
+              </p>
+              <p>
+                My journey began with web development, where I quickly fell in
+                love with creating user-friendly, responsive websites. As I dove
+                deeper into coding, I developed a strong interest in data
+                science, particularly with Python.
+              </p>
+              <p>
+                Today, I combine both passions to craft web applications that
+                are not only functional but also data-driven.
+              </p>
+            </div>
+            <div class="box-2">
+              <h2><u>Skills</u></h2>
+              <p>Icons coming soon...</p>
+            </div>
+          </div>
+          <center>
+            <div class="final-p">
+              <p>I’m always eager to learn and grow, tackling new challenges that blend creativity and problem-solving. Let’s connect if you’re looking for a developer to bring your ideas to life!</p>
+            </div>
+            <div class="about-btn">
+              <a href="https://vaitae.github.io/Resume/" download="Vaishnavi's Resume"><button>Resume</button></a>
+            </div>
+          </center>
+        </div>
+      </section>
+    
 
     <!--loader-->
     <script>
-        var myVar;
+      var myVar;
 
-        function myFunction() {
-            myVar = setTimeout(showPage, 3000);
-        }
+      function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+      }
 
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        }
-    </script>
-</body>
-
+      function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+      }
+  </script>
+  </body>
 </html>
