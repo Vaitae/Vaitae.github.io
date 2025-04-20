@@ -1,97 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="icon" href="assets/favicon.ico" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>V's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body onload="myFunction()" style="margin:0;">
-    <!--Loader-->
-    <div id="loader"></div>
-    <div style="display:none;" id="myDiv" class="animate-bottom">
-    <header>
-      <nav>
-        <a href="#" id="first-link">// V</a>
-        <ul>
-          <a href="#"><li>Home</li></a>
-          <a href="#About"><li>About</li></a>
-          <a href=""><li>Projects</li></a>
-          <a href=""><li>Contact</li></a>
-        </ul>
-      </nav>
-    </header>
-    <center>
-      <section class="hero">
-        <div class="hero-content">
-          <h5 id="hero-h5">// HI, I'm Vaishnavi</h5>
-          <br />
-          <h1 id="hero-h1">{" <span id="yellow">Developer</span> "}</h1>
-          <div class="hero-arrow"><a href=#About>⇣</a></div>
-        </div>
-      </section>
-    </center>
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Vaishnavi</title>
+		<link rel="icon" href="assets/favicon.ico">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-    
-      <section id="About" class="about-section">
-        <div class="About-content">
-          <div class="about-box-1">
-            <center>
-            <h2><span id="purple">{/}</span></h2>
-            <h1>&lt;About me&gt;</h1>
-            <p id="p-yellow">
-              A web developer with a passion for data science and Python
-              programming.
-            </p>
-          </center>
-          </div>
-          <div class="about-box-2">
-            <div class="box-1">
-              <p>
-                I specialize in building dynamic websites and applications while
-                harnessing the power of data to drive insights and solutions.
-              </p>
-              <p>
-                My journey began with web development, where I quickly fell in
-                love with creating user-friendly, responsive websites. As I dove
-                deeper into coding, I developed a strong interest in data
-                science, particularly with Python.
-              </p>
-              <p>
-                Today, I combine both passions to craft web applications that
-                are not only functional but also data-driven.
-              </p>
-            </div>
-            <div class="box-2">
-              <h2><u>Skills</u></h2>
-              <p>Icons coming soon...</p>
-            </div>
-          </div>
-          <center>
-            <div class="final-p">
-              <p>I’m always eager to learn and grow, tackling new challenges that blend creativity and problem-solving. Let’s connect if you’re looking for a developer to bring your ideas to life!</p>
-            </div>
-            <div class="about-btn">
-              <a href="https://vaitae.github.io/Resume/" download="Vaishnavi's Resume"><button>Resume</button></a>
-            </div>
-          </center>
-        </div>
-      </section>
-    
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/v.png" alt="" /></a>
+					<h1><strong>I am Vaishnavi</strong>, <br />
+						a Front-End Developer & Data Analyst<br />
+						<h5 style="color:#dddddd">I’m a tech enthusiast with a strong foundation in web development. I create clean, responsive interfaces and love bringing creative solutions to life. I'm currently seeking my first opportunity to contribute, grow, and make an impact.</h5>
+					
+				</div>
+			</header>
 
-    <!--loader-->
-    <script>
-      var myVar;
+		<!-- Main -->
+			<div id="main">
 
-      function myFunction() {
-          myVar = setTimeout(showPage, 3000);
-      }
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>About Me</h2>
+						</header>
+						<p>I'm a recent Computer Science graduate with a deep interest in building digital products that are functional, efficient, and visually appealing. Over the past year, I've developed several personal projects, gained hands-on experience with modern technologies, and refined my skills through continuous learning.
 
-      function showPage() {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("myDiv").style.display = "block";
-      }
-  </script>
-  </body>
+							Though I may be new to the industry, I'm eager to contribute, adapt quickly to new challenges, and continuously improve. I value clean code, thoughtful design, and collaboration.
+							
+							In my free time, I enjoy singing, dancing and painting.</p>
+						<ul class="actions">
+							<li><a href="https://vaitae.github.io/Resume/" class="button">Resume</a></li>
+						</ul>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Projects</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+								<h3>Fetal Distress Detection</h3>
+								<p>The project focuses on analyzing the CTU-CHB Intrapartum Cardiotocography (CTG) dataset for predictive modeling.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+								<h3>Music Genre Classification</h3>
+								<p>Applied various classification and regression techniques in Python to identify the best predictive model for classifying audio files into their respective genres.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+								<h3>Zomato-Clone</h3>
+								<p>This is a simple clone of Zomato website using HTML and CSS.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+								<h3>Zerodha-CLone</h3>
+								<p>This is a simple clone of Zerodha website using HTML and CSS.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+								<h3>Loan Approval Prediction</h3>
+								<p>This project is designed to predict loan approval outcomes based on historical data.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+								<h3>IPL Score Predictor</h3>
+								<p>An interactive Deep Learning-based application that predicts the score of an IPL match.</p>
+							</article>
+						</div>
+						<!--<ul class="actions">
+							<li><a href="#" class="button">Full Portfolio</a></li>
+						</ul>-->
+					</section>
+
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>I'm excited to start my journey in tech and would love to connect with professionals, mentors, and teams working on meaningful projects. Feel free to reach out!</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="#">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+								</form>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										Bengaluru, India
+									</li>
+									<!--<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										00000-00000
+									</li>-->
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="mailto:thv.bhat@gmail.com">thv.bhat@gmail.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/vaishnavi-bhat-thv/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/Vaitae" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-wordpress"><span class="label">Wordpress</span></a></li>
+						<li><a href="mailto:thv.bhat@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Vaishnavi</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
